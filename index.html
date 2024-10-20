@@ -1,0 +1,106 @@
+Skip to main content
+Google ClassroomClassroom
+ML FSD Jun 2024 | E48Malayalam
+Home
+Calendar
+Enrolled
+To-do
+M
+ML FSD Jun 2024 | E48
+Malayalam
+Archived classes
+Settings
+Assignment 9- Javascript - DOM Manipulation
+Jayce Kuruvilla
+•
+Sep 14
+10 points
+Due Sep 17
+Follow the instructions in the script tag inside the attached html file and write the required code to execute the instructions
+assignment.html
+HTML
+Class comments
+Your work
+Missing
+Private comments
+Assignment 9- Javascript - DOM Manipulation
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Assignment</title>
+    <style>
+        .info-box {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Daily Quote</h2>
+    <p id="quote">Placeholder text for quote</p>
+
+    <div class="info-box">Name: John</div>
+    <div class="info-box">Hobby: Reading</div>
+    <div class="info-box">Occupation: Engineer</div>
+
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+        <li>Task 5</li>
+    </ul>
+
+b
+    <footer><span>Powered by Student's Webpage</span></footer>
+
+    <script>
+        // Manipulating DOM using different getElement methods
+
+        // 1. Change the text content of the paragraph with ID 'quote' to your favourite quote
+
+    let para = document.getElementById('quote')
+    
+    para.innerHTML = "<b>If you want to shine like a sun, first burn like a sun   <i>-APJ Abdul Kalam</i></b>"
+     para.style.fontSize="20px"
+
+        // 2. Change background color of all 'info-box' class divs
+
+     const data = document.getElementsByClassName('info-box')
+
+     for(let i = 0; i<data.length; i++){
+      data[i].style.backgroundColor="red";
+     }
+
+        //or
+    
+        // let data = document.querySelectorAll('.info-box')
+
+        // data.forEach((elements)=>{
+        //     elements.style.backgroundColor="violet"
+        // })
+
+   
+
+
+        // 3. Update the third list item in the task list to a different text
+ 
+           let liItem = document.getElementsByTagName('li')
+           liItem[2].innerText = "Javascript"
+
+
+           
+        // 4. Append the message -"Have a great day" to the footer span using querySelector
+
+           spanItem = document.querySelector('footer span')
+           spanItem.innerText = "Have a great day"
+          spanItem.style.fontSize= "25px"
+</script>
+</body>
+</html>
+
